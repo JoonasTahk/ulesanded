@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tooted ja otsing</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Halda tooteid</h1>
+        <input type="text" id="productName" class="form-control mb-2" placeholder="Nimi">
+        <input type="number" id="productQuantity" class="form-control mb-2" placeholder="Kogus">
+        <button class="btn btn-primary mb-3" onclick="addItem()">Lisa toode</button>
+
+        <select id="productSelect" class="form-select mb-3">
+            <!-- Options will be populated using JavaScript -->
+        </select>
+        <input type="text" id="newName" class="form-control mb-2" placeholder="Uus nimi">
+        <input type="number" id="newQuantity" class="form-control mb-2" placeholder="Uus kogus">
+        <button class="btn btn-primary mb-3" onclick="editItem()">Muuda toodet</button>
+
+        <button class="btn btn-danger mb-3" onclick="deleteItem()">Kustuta toode</button>
+
+        <hr>
+
+        <h2>Otsi tooteid</h2>
+        <input type="text" id="searchInput" class="form-control mb-3" placeholder="Otsi nime järgi">
+        <button class="btn btn-primary" onclick="searchItems()">Otsi</button>
+
+        <ul id="searchResults" class="list-group mt-3">
+            <!-- Search results will be populated using JavaScript -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
